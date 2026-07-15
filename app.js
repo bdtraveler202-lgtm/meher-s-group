@@ -131,3 +131,32 @@ if (productGrid) {
     });
 
 }
+// Banner Slider
+
+const banners = [
+"https://picsum.photos/1200/450?random=1",
+"https://picsum.photos/1200/450?random=2",
+"https://picsum.photos/1200/450?random=3"
+];
+
+let current = 0;
+
+const banner = document.getElementById("banner");
+
+if(banner){
+
+setInterval(()=>{
+
+current++;
+
+if(current>=banners.length){
+
+current=0;
+
+}
+
+banner.src = banners[current];
+
+},3000);
+
+}
