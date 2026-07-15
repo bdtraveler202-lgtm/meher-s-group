@@ -627,6 +627,10 @@ footer{
     font-size:18px;
     border-radius:8px;
     cursor:pointer;
+
+    text-decoration: none;
+display: block;
+text-align: center;
 }
 
 .checkout button:hover{
