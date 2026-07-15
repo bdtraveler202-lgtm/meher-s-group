@@ -101,3 +101,33 @@ setInterval(()=>{
     showSlide(current);
 
 },4000);
+// Load Admin Products
+
+const productGrid = document.getElementById("product-grid");
+
+if (productGrid) {
+
+    const products = JSON.parse(localStorage.getItem("products")) || [];
+
+    products.forEach(product => {
+
+        productGrid.innerHTML += `
+        <div class="product">
+
+            <img src="${product.image}" alt="${product.name}">
+
+            <h3>${product.name}</h3>
+
+            <p>$${product.price}</p>
+
+            <button class="add-cart"
+                data-name="${product.name}"
+                data-price="${product.price}">
+                Add To Cart
+            </button>
+
+        </div>
+        `;
+    });
+
+}
