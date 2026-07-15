@@ -356,3 +356,38 @@ footer{
 .category-box:hover p{
     color:#fff;
 }
+/* Top Brands */
+
+.top-brands{
+    padding:60px 8%;
+    background:#ffffff;
+}
+
+.top-brands h2{
+    color:#00A86B;
+    margin-bottom:25px;
+}
+
+.brands-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.brand-card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.brand-card:hover{
+    background:#FF4FA3;
+    color:#fff;
+    transform:translateY(-8px);
+}
