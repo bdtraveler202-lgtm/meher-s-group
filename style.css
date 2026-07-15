@@ -312,3 +312,47 @@ footer{
     border-radius:8px;
     cursor:pointer;
 }
+/* Popular Categories */
+
+.popular-categories{
+    padding:60px 8%;
+    background:#f7f8fc;
+}
+
+.popular-categories h2{
+    margin-bottom:25px;
+    color:#00A86B;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+}
+
+.category-box{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    font-size:40px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.category-box p{
+    font-size:16px;
+    margin-top:10px;
+    color:#333;
+}
+
+.category-box:hover{
+    background:#00A86B;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.category-box:hover p{
+    color:#fff;
+}
