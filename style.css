@@ -536,3 +536,23 @@ footer{
 .btn:hover{
     background:#FF4FA3;
 }
+.cart-icon{
+    position:relative;
+    cursor:pointer;
+}
+
+#cart-count{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:#FF4FA3;
+    color:#fff;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    font-weight:bold;
+}
